@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+.mask-bg{
+    width:100%;
+    height:100%;
+    background:url(../img/bg.jpg) no-repeat;
+    background-size:cover;
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0.6;
+}
+.mask-color{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    position:fixed;
+    z-index:1;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+@mixin center{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    @content;
+}
+.zuo-sj{
+    width:570px;
+    height:36px;
+    position:relative;
+    left:80px;
+    top:60px;
+    z-index:2;
+    .zuo-zs{
+        display: inline-block;
+        width:120px;
+        height:30px;
+        margin-left:5px;
+        border:1px solid rgba(225,225,225,0.6);
+        color:rgba(225,225,225,0.6);
+        font-size:14px;
+        text-align: center;
+        line-height:30px;
+        &:hover{
+            border:1px solid rgb(225,225,225);
+            color:rgb(225,225,225);
+            .collect{background:url(../img/icon_sprite.png) no-repeat -60px -20px;}
+            .addto{background:url(../img/icon_sprite.png) no-repeat -20px -20px;}
+            .load{background:url(../img/icon_sprite.png) no-repeat -40px -240px;}
+            .delete{background:url(../img/icon_sprite.png) no-repeat -100px -20px;}
+        }
+        .mod_icon{
+            position: relative;
+            top:4px;
+            left:-10px;
+            display: inline-block;
+            width:16px;
+            height:16px;
+            background:red;
+
+        }
+        .collect{
+            background:url(../img/icon_sprite.png) no-repeat -60px 0;
+        }
+        .addto{
+            background:url(../img/icon_sprite.png) no-repeat -20px 0;
+        }
+        .load{
+            background:url(../img/icon_sprite.png) no-repeat -40px -220px;
+        }
+        .delete{
+            background:url(../img/icon_sprite.png) no-repeat -100px 0;
+        }
+    }
+}
+.gequ-box{
+    position: relative;
+    z-index: 2;
+    width:1200px;
+    height:400px;
+    margin:80px auto;
+    .list-table{
+        width:1200px;
+        height:20px;
+        span{
+            display: inline-block;
+            float: left;
+            color:#fff;
+            
+        }
+        .g{width:604px;
+           margin-left:28px;
+        }
+        .s{
+            width:198px;
+        }
+    }
+    .gequ{
+        width:880px;
+        height: 400px;
+        padding:10px; 
+        li{
+            width:880px;
+            line-height:40px;
+            color:#fff;
+            overflow:hidden ;
+            &:hover{.name-box .hov-box{display: block;}}
+            .kuang{
+                width:20px;
+                float: left;
+            }
+            .name-box{
+                width:600px;
+                float: left;
+                .names{
+                    float: left;
+                    width:150px;
+                    &:hover{color:forestgreen;cursor:pointer;}  
+                }
+                .hov-box{
+                    float: right;
+                    width: 200px;
+                    height:40px;
+                    display: none;
+                    a{margin-left:10px;
+                    &:hover{cursor:pointer;}}
+                    .bo{
+                        display: inline-block;
+                        width:36px;
+                        height:40px;
+                        background: url(../img/icon_list_menu.png) no-repeat 0 0;
+                        &:hover{background: url(../img/icon_list_menu.png) no-repeat -40px 0;}
+                    }
+                    .ad{
+                        display: inline-block;
+                        width:36px;
+                        height:40px;
+                        background: url(../img/icon_list_menu.png) no-repeat 0 -79px;
+                        &:hover{background: url(../img/icon_list_menu.png) no-repeat -40px -79px;}
+                    }
+                    .xial{
+                        display: inline-block;
+                        width:36px;
+                        height:40px;
+                        background: url(../img/icon_list_menu.png) no-repeat 0 -120px;
+                        &:hover{background: url(../img/icon_list_menu.png) no-repeat -40px -120px;}
+                    }
+                    .fenxi{
+                        display: inline-block;
+                        width:36px;
+                        height:40px;
+                        background: url(../img/icon_list_menu.png) no-repeat 0 -40px;
+                        &:hover{background: url(../img/icon_list_menu.png) no-repeat -40px -40px;}
+                    }
+                }
+            }
+            .singer{
+                width:200px;
+                float: left;
+                &:hover{color:forestgreen;cursor:pointer;}
+            }
+            .times{
+                width:30px;
+                float: left;
+            }
+        }      
+    }
+}
+.geci-box{
+    width:200px;
+    height:500px;
+    position:fixed;
+    top:40px;
+    right:84px;
+    z-index: 10;
+    .album-tu{
+        width:180px;
+        height:150px;
+        margin:10px;
+        background:url(../img/1.png);
+        background-size:cover;
+    }
+    .album-scri{
+        width:177px;
+        height:87px;
+        margin-left:10px;
+        padding:3px;
+        span{
+            display: block;
+            line-height:24px;
+            color:#fff;
+        }
+    }
+    .geci{
+        width:200px;
+        height:200px;
+        background:red;
+        
+    }
+}
+.controls{
+    position: fixed;
+    width: 1200px;
+    height: 50px;
+    background:rgba(108,99,102,0.7);
+    z-index: 2;
+    left:50%;
+    margin-left:-600px;
+    bottom:0;
+    .presong{
+        @include center;
+        width:19px;
+        height:20px;
+        background:url(../img/player.png) no-repeat 0 -30px;   
+        left:20px;
+    }
+   .baofang-zanting{
+       @include center{
+            width:21px;
+            height:29px;
+            background:url(../img/player.png) no-repeat ;    
+            left:60px;
+       }
+       &.zanting{
+           background:url(../img/player.png) no-repeat -26px 0px;
+       }
+   }
+   .nextsong{
+        @include center;
+        width:19px;
+        height:20px;
+        background:url(../img/player.png) no-repeat 0 -52px;    
+        left:100px;
+    }
+   .jindu{
+       @include center{
+           width: 420px;
+           height: 10px;
+           background:rgba(225,225,225,0.6);
+           left:140px;
+           border-radius: 15px;
+           .yuan{
+               position: absolute;
+               width:13px;
+               height: 13px;
+               border-radius: 50%;
+               background:#fff;
+               top:-2px;
+               z-index: 12;
+           }  
+       }   
+   }
+   .jindu-mask{
+        @include center;
+        width: 0;
+        height: 10px;
+        background:rgba(225,225,225,1);
+        left:140px;
+        border-radius: 15px;
+   }
+   .shijian{
+       @include center{
+           width:90px;
+           height:20px;
+           left:580px;
+       }
+       #dangqian{
+           float: left;
+           color:#fff;
+       }
+       #zongshi{
+           float: right;
+           color:#fff;
+       }
+   }
+   .load-box{
+       @include center;
+       width:480px;
+       left:700px;
+       .rlogo{
+           width:26px;
+           height:22px;
+           float: left;
+           margin-top:12px;
+           margin-left:20px;
+       }
+       .lie{
+           background: url(../img/player.png) no-repeat 0 -72px;
+        }
+        .enjoy{
+          background: url(../img/player.png) no-repeat 0 -94px;
+        }
+        .xiazai{
+           background: url(../img/player.png) no-repeat 0 -118px;
+        }
+        .chun{
+             width:75px;
+             height:24px;
+             margin-top:12px;
+             margin-left:160px;
+             background: url(../img/player.png) no-repeat 0 -283px;
+        }
+         .yinliang{
+           @include center;
+           width:200px;
+           height:20px;
+           left:280px;
+           .volum{
+               @include center;
+               width: 30px;
+               height: 24px;
+               background:url(../img/player.png) no-repeat 0 -141px;
+               &.yin-gang{
+                   background: url(../img/player.png) no-repeat 0 -180px;
+               }
+           }
+           .yin-jindu{
+               @include center;
+               width: 130px;
+               height: 10px;
+               background:rgba(225,225,225,0.6);
+               left:40px;
+               border-radius: 15px;
+               z-index: 12;
+               .yuan{
+                   position: absolute;
+                   width:13px;
+                   height: 13px;
+                   border-radius: 50%;
+                   background:#fff;
+                   top:-2px;
+                   left:100%-9;
+               }  
+           }
+           .yin-jindu1{
+               @include center;
+               width: 130px;
+               height: 10px;
+               background:#fff;
+               left:40px;
+               border-radius: 15px;
+           }
+   }
+   }
+}

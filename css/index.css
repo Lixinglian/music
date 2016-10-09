@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mask-bg {
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0.6;
+}
+
+.mask-color {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.zuo-sj {
+  width: 570px;
+  height: 36px;
+  position: relative;
+  left: 80px;
+  top: 60px;
+  z-index: 2;
+}
+
+.zuo-sj .zuo-zs {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  margin-left: 5px;
+  border: 1px solid rgba(225, 225, 225, 0.6);
+  color: rgba(225, 225, 225, 0.6);
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.zuo-sj .zuo-zs:hover {
+  border: 1px solid #e1e1e1;
+  color: #e1e1e1;
+}
+
+.zuo-sj .zuo-zs:hover .collect {
+  background: url(../img/icon_sprite.png) no-repeat -60px -20px;
+}
+
+.zuo-sj .zuo-zs:hover .addto {
+  background: url(../img/icon_sprite.png) no-repeat -20px -20px;
+}
+
+.zuo-sj .zuo-zs:hover .load {
+  background: url(../img/icon_sprite.png) no-repeat -40px -240px;
+}
+
+.zuo-sj .zuo-zs:hover .delete {
+  background: url(../img/icon_sprite.png) no-repeat -100px -20px;
+}
+
+.zuo-sj .zuo-zs .mod_icon {
+  position: relative;
+  top: 4px;
+  left: -10px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: red;
+}
+
+.zuo-sj .zuo-zs .collect {
+  background: url(../img/icon_sprite.png) no-repeat -60px 0;
+}
+
+.zuo-sj .zuo-zs .addto {
+  background: url(../img/icon_sprite.png) no-repeat -20px 0;
+}
+
+.zuo-sj .zuo-zs .load {
+  background: url(../img/icon_sprite.png) no-repeat -40px -220px;
+}
+
+.zuo-sj .zuo-zs .delete {
+  background: url(../img/icon_sprite.png) no-repeat -100px 0;
+}
+
+.gequ-box {
+  position: relative;
+  z-index: 2;
+  width: 1200px;
+  height: 400px;
+  margin: 80px auto;
+}
+
+.gequ-box .list-table {
+  width: 1200px;
+  height: 20px;
+}
+
+.gequ-box .list-table span {
+  display: inline-block;
+  float: left;
+  color: #fff;
+}
+
+.gequ-box .list-table .g {
+  width: 604px;
+  margin-left: 28px;
+}
+
+.gequ-box .list-table .s {
+  width: 198px;
+}
+
+.gequ-box .gequ {
+  width: 880px;
+  height: 400px;
+  padding: 10px;
+}
+
+.gequ-box .gequ li {
+  width: 880px;
+  line-height: 40px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.gequ-box .gequ li:hover .name-box .hov-box {
+  display: block;
+}
+
+.gequ-box .gequ li .kuang {
+  width: 20px;
+  float: left;
+}
+
+.gequ-box .gequ li .name-box {
+  width: 600px;
+  float: left;
+}
+
+.gequ-box .gequ li .name-box .names {
+  float: left;
+  width: 150px;
+}
+
+.gequ-box .gequ li .name-box .names:hover {
+  color: forestgreen;
+  cursor: pointer;
+}
+
+.gequ-box .gequ li .name-box .hov-box {
+  float: right;
+  width: 200px;
+  height: 40px;
+  display: none;
+}
+
+.gequ-box .gequ li .name-box .hov-box a {
+  margin-left: 10px;
+}
+
+.gequ-box .gequ li .name-box .hov-box a:hover {
+  cursor: pointer;
+}
+
+.gequ-box .gequ li .name-box .hov-box .bo {
+  display: inline-block;
+  width: 36px;
+  height: 40px;
+  background: url(../img/icon_list_menu.png) no-repeat 0 0;
+}
+
+.gequ-box .gequ li .name-box .hov-box .bo:hover {
+  background: url(../img/icon_list_menu.png) no-repeat -40px 0;
+}
+
+.gequ-box .gequ li .name-box .hov-box .ad {
+  display: inline-block;
+  width: 36px;
+  height: 40px;
+  background: url(../img/icon_list_menu.png) no-repeat 0 -79px;
+}
+
+.gequ-box .gequ li .name-box .hov-box .ad:hover {
+  background: url(../img/icon_list_menu.png) no-repeat -40px -79px;
+}
+
+.gequ-box .gequ li .name-box .hov-box .xial {
+  display: inline-block;
+  width: 36px;
+  height: 40px;
+  background: url(../img/icon_list_menu.png) no-repeat 0 -120px;
+}
+
+.gequ-box .gequ li .name-box .hov-box .xial:hover {
+  background: url(../img/icon_list_menu.png) no-repeat -40px -120px;
+}
+
+.gequ-box .gequ li .name-box .hov-box .fenxi {
+  display: inline-block;
+  width: 36px;
+  height: 40px;
+  background: url(../img/icon_list_menu.png) no-repeat 0 -40px;
+}
+
+.gequ-box .gequ li .name-box .hov-box .fenxi:hover {
+  background: url(../img/icon_list_menu.png) no-repeat -40px -40px;
+}
+
+.gequ-box .gequ li .singer {
+  width: 200px;
+  float: left;
+}
+
+.gequ-box .gequ li .singer:hover {
+  color: forestgreen;
+  cursor: pointer;
+}
+
+.gequ-box .gequ li .times {
+  width: 30px;
+  float: left;
+}
+
+.geci-box {
+  width: 200px;
+  height: 500px;
+  position: fixed;
+  top: 40px;
+  right: 84px;
+  z-index: 10;
+}
+
+.geci-box .album-tu {
+  width: 180px;
+  height: 150px;
+  margin: 10px;
+  background: url(../img/1.png);
+  background-size: cover;
+}
+
+.geci-box .album-scri {
+  width: 177px;
+  height: 87px;
+  margin-left: 10px;
+  padding: 3px;
+}
+
+.geci-box .album-scri span {
+  display: block;
+  line-height: 24px;
+  color: #fff;
+}
+
+.geci-box .geci {
+  width: 200px;
+  height: 200px;
+  background: red;
+}
+
+.controls {
+  position: fixed;
+  width: 1200px;
+  height: 50px;
+  background: rgba(108, 99, 102, 0.7);
+  z-index: 2;
+  left: 50%;
+  margin-left: -600px;
+  bottom: 0;
+}
+
+.controls .presong {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 19px;
+  height: 20px;
+  background: url(../img/player.png) no-repeat 0 -30px;
+  left: 20px;
+}
+
+.controls .baofang-zanting {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 21px;
+  height: 29px;
+  background: url(../img/player.png) no-repeat;
+  left: 60px;
+}
+
+.controls .baofang-zanting.zanting {
+  background: url(../img/player.png) no-repeat -26px 0px;
+}
+
+.controls .nextsong {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 19px;
+  height: 20px;
+  background: url(../img/player.png) no-repeat 0 -52px;
+  left: 100px;
+}
+
+.controls .jindu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 420px;
+  height: 10px;
+  background: rgba(225, 225, 225, 0.6);
+  left: 140px;
+  border-radius: 15px;
+}
+
+.controls .jindu .yuan {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  top: -2px;
+  z-index: 12;
+}
+
+.controls .jindu-mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0;
+  height: 10px;
+  background: #e1e1e1;
+  left: 140px;
+  border-radius: 15px;
+}
+
+.controls .shijian {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 90px;
+  height: 20px;
+  left: 580px;
+}
+
+.controls .shijian #dangqian {
+  float: left;
+  color: #fff;
+}
+
+.controls .shijian #zongshi {
+  float: right;
+  color: #fff;
+}
+
+.controls .load-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 480px;
+  left: 700px;
+}
+
+.controls .load-box .rlogo {
+  width: 26px;
+  height: 22px;
+  float: left;
+  margin-top: 12px;
+  margin-left: 20px;
+}
+
+.controls .load-box .lie {
+  background: url(../img/player.png) no-repeat 0 -72px;
+}
+
+.controls .load-box .enjoy {
+  background: url(../img/player.png) no-repeat 0 -94px;
+}
+
+.controls .load-box .xiazai {
+  background: url(../img/player.png) no-repeat 0 -118px;
+}
+
+.controls .load-box .chun {
+  width: 75px;
+  height: 24px;
+  margin-top: 12px;
+  margin-left: 160px;
+  background: url(../img/player.png) no-repeat 0 -283px;
+}
+
+.controls .load-box .yinliang {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 200px;
+  height: 20px;
+  left: 280px;
+}
+
+.controls .load-box .yinliang .volum {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 30px;
+  height: 24px;
+  background: url(../img/player.png) no-repeat 0 -141px;
+}
+
+.controls .load-box .yinliang .volum.yin-gang {
+  background: url(../img/player.png) no-repeat 0 -180px;
+}
+
+.controls .load-box .yinliang .yin-jindu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 130px;
+  height: 10px;
+  background: rgba(225, 225, 225, 0.6);
+  left: 40px;
+  border-radius: 15px;
+  z-index: 12;
+}
+
+.controls .load-box .yinliang .yin-jindu .yuan {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  top: -2px;
+  left: 91%;
+}
+
+.controls .load-box .yinliang .yin-jindu1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 130px;
+  height: 10px;
+  background: #fff;
+  left: 40px;
+  border-radius: 15px;
+}
